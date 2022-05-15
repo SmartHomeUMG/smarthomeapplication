@@ -1,38 +1,58 @@
 .App {
-  text-align: center;
+  width: 100vw;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    margin:0;
+    padding:0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Baner {
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    background-color:aquamarine;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.Navigation {
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
 }
 
-.App-link {
-  color: #61dafb;
+.NavRow {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+   padding: 8px 0px 8px 16px;
+   list-style: none;
+   height: 60px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.NavRow a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    width: 95%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    border-radius: 4px;
+}
+
+.NavRow a:hover {
+    background-color: red;
+}
+
+.NavMenu {
+    width:100%;
+}
+
+.Maincontent{
+    display: flex;
+    height: 90vh;
 }
